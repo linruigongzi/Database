@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "redigo",
+            "name": "redis",
             "type": "go",
             "request": "launch",
-            "mode": "auto",
-            "program": "${workspaceRoot}/Redis/redigo.go",
+            "mode": "debug",
+            "program": "${workspaceFolder}/main/main.go",
             "env": {},
             "args": []
         }
