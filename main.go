@@ -1,7 +1,7 @@
 package main
 
 import (
-	"database/redis"
+	"dbsample/redis"
 	"fmt"
 )
 

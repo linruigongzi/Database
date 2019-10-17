@@ -1,4 +1,4 @@
-module database
+module dbsample
 
 go 1.13
 
