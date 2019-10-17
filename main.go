@@ -7,6 +7,6 @@ import (
 
 func main() {
 	redis.BasicGetSet()
-	fmt.Println("\n")
+	fmt.Println("")
 	redis.ExpirationGetSet()
 }
