@@ -1,4 +1,4 @@
-package dbredis
+package main
 
 import (
 	"fmt"
@@ -23,6 +23,6 @@ func main() {
 	if err != nil {
 		fmt.Println("redis get failed:", err)
 	} else {
-		fmt.Println("Get mykey: %v \n", username)
+		fmt.Printf("Get mykey: %v \n", username)
 	}
 }
