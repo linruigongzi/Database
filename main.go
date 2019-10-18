@@ -1,17 +1,23 @@
 package main
 
 import (
-	"fmt"
-
-	"github.reason.com/redis"
+	rsredis "github.com/reason/database/redis"
 )
 
 func main() {
-	redis.BasicGetSet()
-	fmt.Println("")
-	redis.ExpirationGetSet()
-	fmt.Println("")
-	redis.CheckExist()
-	fmt.Println()
-	redis.DeleteKey()
+	// rsredis.RedioBasicGetSet()
+	// fmt.Println()
+	// rsredis.RedioExpirationGetSet()
+	// fmt.Println()
+	// rsredis.RedioCheckExist()
+	// fmt.Println()
+	// rsredis.RedioDeleteKey()
+	// fmt.Println()
+	// rsredis.RedioJSONValue()
+	// fmt.Println()
+	// rsredis.RedioAppendExpiration()
+	// fmt.Println()
+	// rsredis.RedioListValue()
+
+	rsredis.RedisBasicUsage()
 }
