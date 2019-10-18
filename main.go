@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dbsample/redis"
+	"github.reason.com/redis"
 	"fmt"
 )
 

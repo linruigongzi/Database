@@ -1,4 +1,4 @@
-module dbsample
+module github.reason.com
 
 go 1.13
 
