@@ -2,12 +2,15 @@ package main
 
 import (
 	// rsredis "github.com/reason/redis"
-	"fmt"
 
-	rscontext "github.com/reason/context"
+	_ "github.com/reason/context"
+	rsrabbit "github.com/reason/rabbitMQ"
 )
 
 func main() {
+
+	rsrabbit.Send("ReasonMQ")
+
 	// rsredis.RedioBasicGetSet()
 	// fmt.Println()
 	// rsredis.RedioExpirationGetSet()
@@ -23,11 +26,12 @@ func main() {
 	// rsredis.RedioListValue()
 
 	// rsredis.RedisBasicUsage()
-	rscontext.CTWithCancel()
-	fmt.Println()
-	rscontext.CTWithDeadline()
-	fmt.Println()
-	rscontext.CTWithTimeout()
-	fmt.Println()
-	rscontext.CTWithValue()
+
+	// rscontext.CTWithCancel()
+	// fmt.Println()
+	// rscontext.CTWithDeadline()
+	// fmt.Println()
+	// rscontext.CTWithTimeout()
+	// fmt.Println()
+	// rscontext.CTWithValue()
 }
