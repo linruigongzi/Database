@@ -1,7 +1,10 @@
 package main
 
 import (
-	rsredis "github.com/reason/database/redis"
+	// rsredis "github.com/reason/redis"
+	"fmt"
+
+	rscontext "github.com/reason/context"
 )
 
 func main() {
@@ -19,5 +22,12 @@ func main() {
 	// fmt.Println()
 	// rsredis.RedioListValue()
 
-	rsredis.RedisBasicUsage()
+	// rsredis.RedisBasicUsage()
+	rscontext.CTWithCancel()
+	fmt.Println()
+	rscontext.CTWithDeadline()
+	fmt.Println()
+	rscontext.CTWithTimeout()
+	fmt.Println()
+	rscontext.CTWithValue()
 }
