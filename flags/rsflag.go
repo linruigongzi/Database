@@ -16,7 +16,8 @@ func FlagTest() {
 	flag.Parse()
 
 	cmdParam := make(map[string]string, 0)
-	flag.Visit(func(i *flag.Flag) {
+	// Visit 和 VisitAll 的区别是否是都未设置的值进行遍历
+	flag.VisitAll(func(i *flag.Flag) {
 		cmdParam[i.Name] = i.Value.String()
 		fmt.Printf("%s: %s \n", i.Name, i.Value.String())
 	})
