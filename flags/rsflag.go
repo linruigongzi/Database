@@ -22,5 +22,5 @@ func FlagTest() {
 	})
 
 	fmt.Println(cmdParam)
-	fmt.Println(config)
+	fmt.Println(*config)
 }
